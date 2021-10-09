@@ -1,0 +1,35 @@
+# Menyelesaikan persamaan kuadrat ax2 + bx + c = 0
+# import module matematika math
+import math
+# Input koefisien dari keyboard
+a = int(input('Masukkan a: '))
+b = int(input('Masukkan b: '))
+c = int(input('Masukkan c: '))
+# hitung diskriminan d
+d = (b**2) - (4*a*c)
+# menemukan x1 dan x2
+x1 = (-b+math.sqrt(d))/(2*a)
+x2 = (-b-math.sqrt(d))/(2*a)
+print('Solusinya adalah {0} dan {1}'.format(x1, x2))
+
+a=1
+while a==1:
+ print("Pencari Matriks")
+ 
+ a=int(input(" Nilai A = "))
+ b=int(input(" Nilai B = "))
+ c=int(input(" Nilai C = "))
+ d=int(input(" Nilai D = "))
+ e=int(input(" Nilai E = "))
+ f=int(input(" Nilai F = "))
+ g=int(input(" Nilai G = "))
+ h=int(input(" Nilai H = "))
+ i=int(input(" Nilai I = "))
+
+#Mencari Determinan
+ detA=(a*e*i)+(b*f*g)+(c*d*h)-(g*e*c)-(h*f*a)-(i*d*b)
+ print("\nMatriks A")
+ print("| ",a," ",b," ",c," |")
+ print("| ",d," ",e," ",f," |  ===> DetA = ",detA)
+ print("| ",g," ",h," ",i," |")
+ print("--------------------------")
